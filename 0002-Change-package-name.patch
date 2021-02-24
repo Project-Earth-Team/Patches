@@ -1,0 +1,38 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: rtm516 <ryantmilner@hotmail.co.uk>
+Date: Tue, 23 Feb 2021 21:32:23 +0000
+Subject: [PATCH] Change package name
+
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 849d0022e7b580cda5300340e089c4219d27f555..5b89e76c2651a3da2c5aacb9f6cbf768a6a0726e 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,4 +1,4 @@
+-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="preferExternal" package="com.mojang.minecraftearth" platformBuildVersionCode="29" platformBuildVersionName="10">
++<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="preferExternal" package="dev.projectearth.prod" platformBuildVersionCode="29" platformBuildVersionName="10">
+     <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+     <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+     <uses-feature android:name="android.hardware.sensor.compass" android:required="true"/>
+@@ -128,7 +128,7 @@
+                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+             </intent-filter>
+         </receiver>
+-        <provider android:authorities="com.mojang.minecraftearth.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
++        <provider android:authorities="dev.projectearth.prod.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+         <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+         </service>
+@@ -144,9 +144,9 @@
+         </service>
+         <receiver android:exported="false" android:name="com.mojang.minecraftpe.CustomBroadcastReceiver">
+             <intent-filter>
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_NOTIFICATION_OPENED" id="0"/>
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_RECEIVED" id="1"/>
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_DELETED" id="2"/>
++                <action android:name="dev.projectearth.prod.intent.APPBOY_NOTIFICATION_OPENED" id="0"/>
++                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_RECEIVED" id="1"/>
++                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_DELETED" id="2"/>
+             </intent-filter>
+         </receiver>
+         <service android:exported="false" android:name="com.google.firebase.messaging.cpp.RegistrationIntentService"/>

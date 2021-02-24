@@ -1,0 +1,29 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: rtm516 <ryantmilner@hotmail.co.uk>
+Date: Tue, 23 Feb 2021 21:30:00 +0000
+Subject: [PATCH] Patch signature and login
+
+
+diff --git a/smali/com/microsoft/onlineid/internal/Applications.smali b/smali/com/microsoft/onlineid/internal/Applications.smali
+index 2de836345baaacdb9a9f5979d7abf666f2aa67bc..232c7fbbad24bc2339fc31fecc56d1d0948d3b6d 100644
+--- a/smali/com/microsoft/onlineid/internal/Applications.smali
++++ b/smali/com/microsoft/onlineid/internal/Applications.smali
+@@ -32,7 +32,8 @@
+     move-result-object v0
+ 
+     .line 36
+-    .local v0, "certHashBase32":Ljava/lang/String;
++    const-string/jumbo v0, "H62DKCBHJP6WXXIV7RBFOGOL4NAK4E6Y"
++    const-string/jumbo v3, "com.mojang.minecraftearth"
+     new-instance v1, Ljava/lang/StringBuilder;
+ 
+     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+@@ -43,7 +44,7 @@
+ 
+     move-result-object v1
+ 
+-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ 
+     move-result-object v1
+ 
