@@ -5,34 +5,35 @@ Subject: [PATCH] Change package name
 
 
 diff --git a/AndroidManifest.xml b/AndroidManifest.xml
-index 849d0022e7b580cda5300340e089c4219d27f555..5b89e76c2651a3da2c5aacb9f6cbf768a6a0726e 100644
+index ad26598b87d629d58532e6f5a2da03dcca9a1227..b97d9d1bc1535728704d1928b0bb2225aabf9da1 100644
 --- a/AndroidManifest.xml
 +++ b/AndroidManifest.xml
-@@ -1,4 +1,4 @@
--<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="preferExternal" package="com.mojang.minecraftearth" platformBuildVersionCode="29" platformBuildVersionName="10">
-+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="preferExternal" package="dev.projectearth.prod" platformBuildVersionCode="29" platformBuildVersionName="10">
-     <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
-     <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
-     <uses-feature android:name="android.hardware.sensor.compass" android:required="true"/>
-@@ -128,7 +128,7 @@
-                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest android:versionCode="2020121703" android:versionName="0.33.0" android:installLocation="preferExternal" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.mojang.minecraftearth" platformBuildVersionCode="29" platformBuildVersionName="10"
++<manifest android:versionCode="2020121703" android:versionName="0.33.0" android:installLocation="preferExternal" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="dev.projectearth.prod" platformBuildVersionCode="29" platformBuildVersionName="10"
+   xmlns:android="http://schemas.android.com/apk/res/android">
+     <uses-feature android:glEsVersion="0x20000" android:required="true" />
+     <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+@@ -130,7 +130,7 @@
+                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
              </intent-filter>
          </receiver>
--        <provider android:authorities="com.mojang.minecraftearth.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-+        <provider android:authorities="dev.projectearth.prod.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-         <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
-             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+-        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.mojang.minecraftearth.firebaseinitprovider" android:initOrder="100" />
++        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="dev.projectearth.prod.firebaseinitprovider" android:initOrder="100" />
+         <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar" />
          </service>
-@@ -144,9 +144,9 @@
+@@ -146,9 +146,9 @@
          </service>
-         <receiver android:exported="false" android:name="com.mojang.minecraftpe.CustomBroadcastReceiver">
+         <receiver android:name="com.mojang.minecraftpe.CustomBroadcastReceiver" android:exported="false">
              <intent-filter>
--                <action android:name="com.mojang.minecraftearth.intent.APPBOY_NOTIFICATION_OPENED" id="0"/>
--                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_RECEIVED" id="1"/>
--                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_DELETED" id="2"/>
-+                <action android:name="dev.projectearth.prod.intent.APPBOY_NOTIFICATION_OPENED" id="0"/>
-+                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_RECEIVED" id="1"/>
-+                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_DELETED" id="2"/>
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_NOTIFICATION_OPENED" id="0" />
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_RECEIVED" id="1" />
+-                <action android:name="com.mojang.minecraftearth.intent.APPBOY_PUSH_DELETED" id="2" />
++                <action android:name="dev.projectearth.prod.intent.APPBOY_NOTIFICATION_OPENED" id="0" />
++                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_RECEIVED" id="1" />
++                <action android:name="dev.projectearth.prod.intent.APPBOY_PUSH_DELETED" id="2" />
              </intent-filter>
          </receiver>
-         <service android:exported="false" android:name="com.google.firebase.messaging.cpp.RegistrationIntentService"/>
+         <service android:name="com.google.firebase.messaging.cpp.RegistrationIntentService" android:exported="false" />
