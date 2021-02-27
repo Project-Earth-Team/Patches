@@ -1,0 +1,19 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Luminoso-256 <63971285+Luminoso-256@users.noreply.github.com>
+Date: Sat, 27 Feb 2021 12:20:09 -0600
+Subject: [PATCH] Fix a single space mistake.
+
+
+diff --git a/assets/resource_packs/genoa_base/texts/en_US.lang b/assets/resource_packs/genoa_base/texts/en_US.lang
+index 01691539cc51c0819dd7af9169fa9aeaa4d290a7..c3624aabc58103685509fc8aaa2d292d0eba7717 100644
+--- a/assets/resource_packs/genoa_base/texts/en_US.lang
++++ b/assets/resource_packs/genoa_base/texts/en_US.lang
+@@ -6314,7 +6314,7 @@ sunset.overlay.header=Legal Notice!
+ sunset.overlay.button=Sunset Information
+ sunset.overlay.button.redeem=Redeem Free Copy of Minecraft
+ sunset.modal.title=Time to Sunset
+-sunset.modal.body= Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
++sunset.modal.body=Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
+ sunset.modal.button.one=Sunset Information
+ sunset.modal.button.two=Good to Know
+ sunset.settings.button=Sunset Information
