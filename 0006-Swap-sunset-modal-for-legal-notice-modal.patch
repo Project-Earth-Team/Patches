@@ -4,11 +4,29 @@ Date: Sat, 27 Feb 2021 12:19:17 -0600
 Subject: [PATCH] Swap sunset modal for legal notice modal
 
 
+diff --git a/assets/resource_packs/genoa_base/texts/en_GB.lang b/assets/resource_packs/genoa_base/texts/en_GB.lang
+index 40cba1d35ae1421c4ee1b4175c2733474a505620..cd18ea92e1f1b28a744507a16de2a563b9203fa8 100644
+--- a/assets/resource_packs/genoa_base/texts/en_GB.lang
++++ b/assets/resource_packs/genoa_base/texts/en_GB.lang
+@@ -6310,10 +6310,10 @@
+ map.xp.increment=+%s XP	#
+ map.ugcpermission.content=You cannot perform this action because of how your Xbox Live account is set up. This can be changed in your privacy & online safety settings on Xbox.com.	#
+ 
+-sunset.overlay.header=Time to Sunset	#
++sunset.overlay.header=Legal Notice!
+ sunset.overlay.button=Sunset Information	#
+ sunset.overlay.button.redeem=Redeem a Free Copy of Minecraft	#
+ sunset.modal.title=Time to Sunset	#
+-sunset.modal.body=Thanks for playing Minecraft Earth! We have made the difficult discussion to end support for Minecraft Earth on 30 June 2021. Thanks for playing and we hope to see you in Minecraft!	#
++sunset.modal.body=Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
+ sunset.modal.button.one=Sunset Information	#
+ sunset.modal.button.two=Good to know	#
+ sunset.settings.button=Sunset Information	#
 diff --git a/assets/resource_packs/genoa_base/texts/en_US.lang b/assets/resource_packs/genoa_base/texts/en_US.lang
-index 348cdaea906518e1a89c7357b15b7a7bdb6b5f28..01691539cc51c0819dd7af9169fa9aeaa4d290a7 100644
+index 348cdaea906518e1a89c7357b15b7a7bdb6b5f28..c3624aabc58103685509fc8aaa2d292d0eba7717 100644
 --- a/assets/resource_packs/genoa_base/texts/en_US.lang
 +++ b/assets/resource_packs/genoa_base/texts/en_US.lang
-@@ -6310,11 +6310,11 @@ map.tappable.limit.content=You've collected too many tappables too quickly. You
+@@ -6310,10 +6310,10 @@
  map.xp.increment=+%s XP
  map.ugcpermission.content=You cannot perform this action because of how your Xbox Live account is setup. This can be changed in your privacy & online safety settings on Xbox.com.
  
@@ -18,7 +36,7 @@ index 348cdaea906518e1a89c7357b15b7a7bdb6b5f28..01691539cc51c0819dd7af9169fa9aea
  sunset.overlay.button.redeem=Redeem Free Copy of Minecraft
  sunset.modal.title=Time to Sunset
 -sunset.modal.body=Thanks for playing Minecraft Earth! We have made the difficult discussion to end support for Minecraft Earth on June 30th 2021. Thanks for playing and we hope to see you in Minecraft!
-+sunset.modal.body= Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
++sunset.modal.body=Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
  sunset.modal.button.one=Sunset Information
  sunset.modal.button.two=Good to Know
  sunset.settings.button=Sunset Information
