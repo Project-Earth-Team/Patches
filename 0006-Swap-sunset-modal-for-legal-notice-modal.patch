@@ -8,7 +8,7 @@ diff --git a/assets/resource_packs/genoa_base/texts/en_GB.lang b/assets/resource
 index 40cba1d35ae1421c4ee1b4175c2733474a505620..cd18ea92e1f1b28a744507a16de2a563b9203fa8 100644
 --- a/assets/resource_packs/genoa_base/texts/en_GB.lang
 +++ b/assets/resource_packs/genoa_base/texts/en_GB.lang
-@@ -6310,10 +6310,10 @@
+@@ -6310,11 +6310,11 @@ map.tappable.limit.content=You've collected too many tappables too quickly. You
  map.xp.increment=+%s XP	#
  map.ugcpermission.content=You cannot perform this action because of how your Xbox Live account is set up. This can be changed in your privacy & online safety settings on Xbox.com.	#
  
@@ -26,7 +26,7 @@ diff --git a/assets/resource_packs/genoa_base/texts/en_US.lang b/assets/resource
 index 348cdaea906518e1a89c7357b15b7a7bdb6b5f28..c3624aabc58103685509fc8aaa2d292d0eba7717 100644
 --- a/assets/resource_packs/genoa_base/texts/en_US.lang
 +++ b/assets/resource_packs/genoa_base/texts/en_US.lang
-@@ -6310,10 +6310,10 @@
+@@ -6310,11 +6310,11 @@ map.tappable.limit.content=You've collected too many tappables too quickly. You
  map.xp.increment=+%s XP
  map.ugcpermission.content=You cannot perform this action because of how your Xbox Live account is setup. This can be changed in your privacy & online safety settings on Xbox.com.
  
