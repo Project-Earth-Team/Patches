@@ -1,0 +1,20 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: circuit10 <heath.mitchell27@gmail.com>
+Date: Tue, 9 Mar 2021 19:09:42 +0000
+Subject: [PATCH] Disable licence check
+
+Allows you to change Google accounts/phones and helps preserve the game
+
+diff --git a/smali/com/googleplay/licensing/LicenseChecker.smali b/smali/com/googleplay/licensing/LicenseChecker.smali
+index fa9747a3348b8cd50f85c155524c3a5da02a783a..f741a598a182bb436864613db3a5b0364c378f1d 100644
+--- a/smali/com/googleplay/licensing/LicenseChecker.smali
++++ b/smali/com/googleplay/licensing/LicenseChecker.smali
+@@ -279,7 +279,7 @@
+ 
+     move-result v0
+ 
+-    if-eqz v0, :cond_0
++    # if-eqz v0, :cond_0
+ 
+     .line 195
+     invoke-direct {p0}, Lcom/googleplay/licensing/LicenseChecker;->cleanupService()V
